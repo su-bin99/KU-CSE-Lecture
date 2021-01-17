@@ -1,0 +1,2 @@
+rootProject.name='Lec7_2CallMyAppList'
+include ':app'

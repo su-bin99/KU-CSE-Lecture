@@ -1,0 +1,2 @@
+rootProject.name='Lec6_1LogTest'
+include ':app'

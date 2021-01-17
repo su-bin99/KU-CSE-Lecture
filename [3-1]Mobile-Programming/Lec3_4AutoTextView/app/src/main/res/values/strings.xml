@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lec3_4AutoTextView</string>
+    <string-array name="countries_array">
+        <item>Arghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Arghanistan</item>
+        <item>American Samoa</item>
+        <item>Bahrain</item>
+        <item>Barbados</item>
+        <item>Belgium</item>
+    </string-array>
+</resources>

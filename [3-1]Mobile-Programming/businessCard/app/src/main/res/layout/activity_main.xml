@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="414dp"
+        android:layout_height="321dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/subin" />
+
+
+
+    <RadioGroup
+        android:id="@+id/imageGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="256dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/englishfont"
+            android:text="Photo1"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/englishfont"
+            android:text="Photo2"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/englishfont"
+            android:text="Photo3"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/koreanname"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/nanumgothicbold"
+        android:text="배     수     빈"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/mobilenum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/engname"
+        android:layout_width="76dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/englishfont"
+        android:text="BAE – SU BIN"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="@+id/koreanname"
+        app:layout_constraintTop_toBottomOf="@+id/imageGroup" />
+
+    <TextView
+        android:id="@+id/univ"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/englishfont"
+        android:text="Konkuk Univ CSE 18"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/mobilenum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toEndOf="@+id/mobileText"
+        app:layout_constraintTop_toBottomOf="@+id/koreanname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/mobilenum"
+        android:layout_width="117dp"
+        android:layout_height="23dp"
+        android:autoLink="phone"
+        android:fontFamily="@font/englishfont"
+        android:text="+82-010-2502-9767"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/addrText"
+        app:layout_constraintTop_toBottomOf="@+id/engname"
+        app:layout_constraintVertical_bias="0.876"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="96dp"
+        android:autoLink="email"
+        android:fontFamily="@font/englishfont"
+        android:text="subin125@naver.com"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toEndOf="@+id/mobileText"
+        app:layout_constraintTop_toBottomOf="@+id/engname" />
+
+    <TextView
+        android:id="@+id/addrText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/englishfont"
+        android:text="address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGroup"
+        app:layout_constraintVertical_bias="0.694" />
+
+    <TextView
+        android:id="@+id/mobileText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/englishfont"
+        android:text="mobile"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintEnd_toStartOf="@+id/mobilenum"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="177dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="@font/nanumgothic"
+        android:text="서울시 송파구 거여1동 삼호아파트"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/emailText" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/englishfont"
+        android:text="email"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/addrText"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:background="@drawable/btnstyle"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:text="@null"
+        android:textOff="@null"
+        android:textOn="@null"
+        app:layout_constraintBottom_toTopOf="@+id/mobileText"
+        app:layout_constraintEnd_toStartOf="@+id/koreanname"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGroup"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/introduceText"
+        android:layout_width="378dp"
+        android:layout_height="287dp"
+        android:background="#EBFFFFFF"
+        android:fontFamily="@font/nanumgothic"
+        android:text="\n     안녕하세요 :) \n     컴퓨터공학과 201811259 배수빈입니다. \n     현재 건국대학교 컴퓨터공학과 3학년으로 \n     모바일프로그래밍, 운영체제 등 \n     다양한 전공수업을 듣고 있습니다. \n     한학기동안 열심히 공부해서  \n     안드로이드 앱을 만들 수 있는 역량을  \n     기르고 싶습니다.   \n     모두들 코로나 조심하세요:)"        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView"
+        app:layout_constraintEnd_toEndOf="@+id/imgView"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/imgView"
+        app:layout_constraintTop_toTopOf="@+id/imgView"
+        app:layout_constraintVertical_bias="0.47" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
